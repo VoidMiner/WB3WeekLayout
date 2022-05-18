@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigationFrag">
+    <fragment
+        android:id="@+id/template12"
+        android:name="com.example.wb3weeklayout.TemplateOne"
+        android:label="Template1" >
+        <action
+            android:id="@+id/action_template12_to_template22"
+            app:destination="@id/template22" />
+    </fragment>
+    <fragment
+        android:id="@+id/template22"
+        android:name="com.example.wb3weeklayout.Template2"
+        android:label="fragment_template2"
+        tools:layout="@layout/fragment_template2" >
+        <action
+            android:id="@+id/action_template22_to_template32"
+            app:destination="@id/template32" />
+    </fragment>
+    <fragment
+        android:id="@+id/template32"
+        android:name="com.example.wb3weeklayout.Template3"
+        android:label="fragment_template3"
+        tools:layout="@layout/fragment_template3" >
+        <action
+            android:id="@+id/action_template32_to_template42"
+            app:destination="@id/template42" />
+    </fragment>
+    <fragment
+        android:id="@+id/template42"
+        android:name="com.example.wb3weeklayout.Template4"
+        android:label="fragment_template4"
+        tools:layout="@layout/fragment_template4" >
+        <action
+            android:id="@+id/action_template42_to_template12"
+            app:destination="@id/template12" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigationFrag"
+        android:name="com.example.wb3weeklayout.NavigationFrag"
+        android:label="fragment_navigation"
+        tools:layout="@layout/fragment_navigation" >
+        <action
+            android:id="@+id/action_navigationFrag_to_template12"
+            app:destination="@id/template12" />
+        <action
+            android:id="@+id/action_navigationFrag_to_template22"
+            app:destination="@id/template22" />
+        <action
+            android:id="@+id/action_navigationFrag_to_template32"
+            app:destination="@id/template32" />
+        <action
+            android:id="@+id/action_navigationFrag_to_template42"
+            app:destination="@id/template42" />
+    </fragment>
+</navigation>

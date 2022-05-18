@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WB3WeekLayout</string>
+    <string name="template_1">template 1</string>
+    <string name="template_2">template 2</string>
+    <string name="template_3">template 3</string>
+    <string name="template_4">template 4</string>
+    <string name="currentmusic">Сейчас играет</string>
+    <string name="playlist">Музыка для кодинга</string>
+    <string name="trackname">Fighting Gold</string>
+    <string name="artistname">Coda</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
